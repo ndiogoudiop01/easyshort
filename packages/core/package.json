@@ -1,0 +1,11 @@
+{
+  "name": "@easyshort/core",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "dependencies": {
+    "@easyshort/db": "workspace:*",
+    "drizzle-orm": "^0.38.0"
+  }
+}

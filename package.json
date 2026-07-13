@@ -1,0 +1,25 @@
+{
+  "name": "easyshort",
+  "private": true,
+  "packageManager": "pnpm@9.12.0",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "db:generate": "pnpm --filter @easyshort/db db:generate",
+    "db:migrate": "pnpm --filter @easyshort/db db:migrate",
+    "db:studio": "pnpm --filter @easyshort/db db:studio"
+  },
+  "devDependencies": {
+    "turbo": "^2.1.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^0.10.4",
+    "@types/node": "^26.1.1",
+    "@types/ws": "^8.18.1",
+    "drizzle-orm": "^0.38.4",
+    "ws": "^8.21.0"
+  }
+}
